@@ -1,0 +1,23 @@
+.imageForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.imageForm__text {
+	font-size: 1.5rem;
+}
+
+.imageForm__wrapper {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	min-width: 50rem;
+	max-width: 80rem;
+}
+
+.imageForm__input {
+	width: 80%;
+	border: 0.3rem solid #000000;
+}

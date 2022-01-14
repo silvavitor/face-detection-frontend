@@ -1,0 +1,25 @@
+.button {
+	padding: 0.7rem 2rem;
+	font-weight: bold;
+	font-size: 1.3rem;
+	cursor: pointer;
+	background: #ffffff;
+	border: 0.3rem solid #000000;
+	box-sizing: border-box;
+	box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+	transition: opacity ease-in-out 0.2s, box-shadow ease-in-out 0.2s;
+}
+
+.button:hover {
+	opacity: 80%;
+	box-shadow: 0rem 0.6rem 0.6rem rgba(0, 0, 0, 0.25);
+}
+
+.button--black {
+	background: #000000;
+	color: #ffffff;
+}
+
+.space-around-10 {
+	margin: 0 10px;
+}

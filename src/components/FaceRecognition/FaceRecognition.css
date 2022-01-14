@@ -1,0 +1,22 @@
+.image-container {
+	display: flex;
+	justify-content: center;
+}
+
+.image-wrapper {
+	position: absolute;
+	margin-top: 10px;
+}
+
+.image {
+	max-width: 700px;
+}
+
+.bounding-box {
+	position: absolute;
+	box-shadow: 0 0 0 3px #fa0404 inset;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	cursor: pointer;
+}

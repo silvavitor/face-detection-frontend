@@ -1,0 +1,9 @@
+.rank__wrapper {
+	display: flex;
+	color: #000;
+	margin: 9rem auto 6rem;
+	font-size: 3.5rem;
+	font-weight: bold;
+	justify-content: center;
+	align-items: center;
+}
