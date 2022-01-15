@@ -20,7 +20,6 @@ class Signin extends Component {
   }
 
   onSubmitSignIn = () => {
-    console.log(process.env, window.env);
     fetch(`${process.env.REACT_APP_BACKEND_URL}/signin`, {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
