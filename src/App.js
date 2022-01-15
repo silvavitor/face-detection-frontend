@@ -103,7 +103,7 @@ class App extends Component {
 
 	onButtonSubmit = () => {
 		this.setState({ imageUrl: this.state.input })
-			fetch(`$${process.env.REACT_APP_BACKEND_URL}/imageurl`, {
+			fetch(`${process.env.REACT_APP_BACKEND_URL}/imageurl`, {
 				method: 'post',
 				headers: { 'Content-Type': 'application/json' },
 				body: JSON.stringify({
