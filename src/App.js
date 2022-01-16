@@ -79,11 +79,13 @@ class App extends Component {
 			.then(response => response.json())
 			.then(response => {
 				if (response) {
+					const faces = response.outputs[0].data.regions.length || 0;
 					fetch(`${process.env.REACT_APP_BACKEND_URL}/image`, {
 							method: 'put',
 							headers: { 'Content-Type': 'application/json' },
 							body: JSON.stringify({
-								id: this.state.user.id
+								id: this.state.user.id,
+								faces: faces
 							})
 						})
 						.then(response => response.json())
