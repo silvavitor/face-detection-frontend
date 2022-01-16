@@ -5,10 +5,10 @@ const particlesOptions = {
 	preset: "links",
 	particles: {
 		number: {
-			value: 60,
+			value: 55,
 			density: {
 				enable: true,
-				value_area: 800
+				value_area: 1100
 			}
 		},
 		line_linked: {
