@@ -1,51 +1,14 @@
-import Particles from 'react-tsparticles';
-import { loadLinksPreset } from "tsparticles-preset-links";
 import Header from './components/Header/Header';
 import Rank from './components/Rank/Rank';
 import Signin from './components/Signin/Signin';
 import Register from './components/Register/Register';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
+import CustomParticles from './components/CustomParticles/CustomParticles';
 import {} from 'dotenv/config';
 
 import './App.css';
 import { Component } from 'react';
-
-const particlesOptions = {
-	preset: "links",
-	particles: {
-		number: {
-			value: 60,
-			density: {
-				enable: true,
-				value_area: 800
-			}
-		},
-		line_linked: {
-			opacity: 0.4,
-			color: {
-				value: "#000"
-			},
-			shadow: {
-				enable: true,
-				color: '#141414',
-				blur: 5
-			}
-		},
-		color: {
-			value: "#000"
-		},
-		stroke: {
-			color: "#000"
-		},
-		size: {
-			value: 2
-		}
-	},
-	background: {
-		color: "#FFF"
-	}
-}
 
 const initialState = {
 	input: '',
@@ -144,15 +107,11 @@ class App extends Component {
 		}
 	};
 
-	customInit(main) {
-    loadLinksPreset(main);
-  }
-
 	render() {
 		let { isSignedIn, imageUrl, route, boxes } = this.state;
 		return (
 			<div className="App">
-				<Particles className='particles' id="tsparticles" options={particlesOptions} init={this.customInit}/>
+				<CustomParticles />
 				<Header isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
 				{
 					route === 'home'
